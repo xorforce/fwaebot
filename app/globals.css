@@ -21,8 +21,8 @@
 }
 
 @font-face {
-  font-family: "Space Grotesk Local";
-  src: url("/fonts/SpaceGrotesk-Regular.otf") format("opentype");
+  font-family: "Inter Local";
+  src: url("/fonts/Inter-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -38,7 +38,7 @@ body {
   margin: 0;
   background: #0b0b0b;
   color: #f5f5f5;
-  font-family: "Space Grotesk Local", sans-serif;
+  font-family: "Inter Local", sans-serif;
   letter-spacing: 0.01em;
 }
 
@@ -48,14 +48,26 @@ a {
 
 .title-55 {
   font-family: "Ndot55", sans-serif;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 
 .title-57 {
   font-family: "Ndot57", sans-serif;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 
 .mono {
   font-family: "Space Mono Local", monospace;
+}
+
+.note-card {
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 1rem;
+  transition: border-color 120ms ease, background-color 120ms ease;
+}
+
+.note-card:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.02);
 }
