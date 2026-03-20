@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(139, 92, 246, 0.16), transparent 25%),
+    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.14), transparent 30%);
+}
+
+.prose a {
+  text-decoration: underline;
+}
