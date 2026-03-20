@@ -3,21 +3,16 @@ import { posts } from "@/lib/posts";
 
 export default function BlogIndex() {
   return (
-    <section className="space-y-6">
-      <h1 className="font-display text-4xl">All posts</h1>
-      <div className="grid gap-4">
+    <section className="space-y-8">
+      <h1 className="title-57 text-4xl">Blog</h1>
+      <div className="space-y-7">
         {posts.map((post) => (
-          <article key={post.slug} className="rounded-xl border border-base-300/70 bg-base-200/30 p-5">
-            <p className="text-xs uppercase tracking-wider text-base-content/60">{post.date}</p>
-            <h2 className="mt-1 font-display text-2xl">{post.title}</h2>
-            <p className="mt-2 text-base-content/80">{post.excerpt}</p>
-            <div className="mt-3 flex gap-2">
-              {post.tags.map((tag) => (
-                <span key={tag} className="badge badge-outline">#{tag}</span>
-              ))}
-            </div>
-            <Link href={`/blog/${post.slug}`} className="mt-4 inline-block text-primary underline">
-              Read more
+          <article key={post.slug} className="space-y-2 border-t border-white/15 pt-5">
+            <p className="mono text-xs text-white/50">{post.date}</p>
+            <h2 className="title-55 text-2xl">{post.title}</h2>
+            <p className="text-sm text-white/75">{post.excerpt}</p>
+            <Link href={`/blog/${post.slug}`} className="mono text-xs uppercase tracking-wider underline">
+              Open
             </Link>
           </article>
         ))}

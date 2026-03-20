@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export function SiteHeader() {
   return (
-    <header className="border-b border-base-300/70 bg-base-100/80 backdrop-blur">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <Link href="/" className="font-display text-xl tracking-wide">
-          fwaebot<span className="text-primary">.blog</span>
+    <header className="border-b border-white/15">
+      <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-5">
+        <Link href="/" className="title-55 text-lg uppercase">
+          fwaebot
         </Link>
-        <div className="flex gap-3 text-sm">
-          <Link href="/" className="btn btn-ghost btn-sm">Home</Link>
-          <Link href="/blog" className="btn btn-ghost btn-sm">Blog</Link>
+        <div className="mono flex gap-6 text-xs uppercase tracking-wide text-white/70">
+          <Link href="/">Home</Link>
+          <Link href="/blog">Blog</Link>
         </div>
       </nav>
     </header>
